@@ -8,3 +8,7 @@ A static ONNX export of base HTDemucs for audio separation projects, including p
 - [MIT license and upstream attribution](LICENSE.demucs)
 
 The model produces drums, bass, other instruments, and vocals through the matching audio DSP and inference integration. It is not a standalone audio-file application or hosted processing service. No training audio is distributed here. Personal-use intent does not replace or narrow the upstream MIT license.
+
+## License clarification
+
+The MIT notice covers Demucs software; pretrained-weight redistribution permission is unresolved. See the [model card](MODEL-CARD.md#license-intended-use-and-training-provenance) for the upstream author’s statement and limits. This repository does not grant a weight license.

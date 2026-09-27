@@ -6,7 +6,7 @@ The export is designed for efficient inference and portability through ONNX tool
 
 ## Download and identity
 
-[Download the ONNX model](https://github.com/raindog-ai/cellophane-forge-models/releases/download/htdemucs-onnx-v1/htdemucs_static.onnx) · [Release files](https://github.com/raindog-ai/cellophane-forge-models/releases/tag/htdemucs-onnx-v1) · [MIT license and attribution](https://github.com/raindog-ai/cellophane-forge-models/blob/main/LICENSE.demucs)
+[Download the ONNX model](https://github.com/raindog-ai/cellophane-forge-models/releases/download/htdemucs-onnx-v1/htdemucs_static.onnx) · [Release files](https://github.com/raindog-ai/cellophane-forge-models/releases/tag/htdemucs-onnx-v1) · [Demucs software license and attribution](https://github.com/raindog-ai/cellophane-forge-models/blob/main/LICENSE.demucs)
 
 | Property | Value |
 | --- | --- |
@@ -41,9 +41,11 @@ These recipe hashes identify the inspected conversion scripts. They do not recon
 
 ## License, intended use, and training provenance
 
-The upstream Demucs release uses the **MIT license**. The accompanying `LICENSE.demucs` preserves the Meta Platforms, Inc. and affiliates copyright and full license notice. Attribution and license text remain part of this distribution.
+The upstream **Demucs software** uses the MIT license. `LICENSE.demucs` preserves that software copyright and license notice; it must not be interpreted as a verified MIT grant for pretrained model weights.
 
-Personal audio projects and aural research are intended uses described by this model card, **not additional restrictions on or a replacement for the MIT license**. This card does not relicense the upstream model. Use recordings you own or have permission to process; separating audio does not grant permission to publish or redistribute someone else's music.
+The upstream author [states that the weights are not covered by MIT and are provided for scientific purposes](https://github.com/facebookresearch/demucs/issues/327#issuecomment-1134828611). That statement predates HTDemucs v4; we have not verified a superseding redistribution grant for this converted artifact. Separately, the author's [FT model card removed its MIT license metadata](https://huggingface.co/adefossez/HTDemucs-ft/commit/d74ac89c3a1e874fc78f152555cf4d8533f06cd4); that is FT-specific evidence, not a new license for this base export. **Weight redistribution permission remains unresolved. This card does not grant it.**
+
+Personal audio projects and aural research describe the intended use, not a new weight license or permission to redistribute the artifact. User acknowledgements and separate downloading do not establish upstream permissions. Use recordings you own or have permission to process; separating audio does not grant permission to publish or redistribute someone else's music.
 
 Upstream describes training on MUSDB-HQ and an additional 800 songs. The [MUSDB18 dataset page](https://sigsep.github.io/datasets/musdb.html) documents separate recording terms and academic-use access conditions. Those are training-data provenance, not a substitute model license. No training audio is included in this release, and this distribution grants no rights in the recordings a user supplies.
 
